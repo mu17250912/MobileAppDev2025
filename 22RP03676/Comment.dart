@@ -3,7 +3,7 @@
 
 void main() {
   // Print a greeting to the console
-  print("Hello, Dart!");
+ 
 
   /*
    This is a multi-line comment.
