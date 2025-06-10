@@ -1,0 +1,21 @@
+name: Auto Merge All PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]  # trigger on PR events
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Auto-merge pull request
+      uses: pascalgn/automerge-action@v0.16.3
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      with:
+        mergeMethod: squash  # or "merge" or "rebase"
+        labels: ""           # Leave blank to merge all PRs

@@ -1,0 +1,213 @@
+// 📘 Dart Functions: A Comprehensive Guide
+
+// --------------------------------------------------
+// 1. Regular Function
+// --------------------------------------------------
+// 🔹 Definition:
+// A function that performs a task when called.
+// 🔹 Syntax:
+// void functionName() { ... }
+// 🔹 Example:
+void greet() {
+  print('Hello!');
+}
+// 🔹 Usage:
+void regularFunctionUsage() {
+  greet();
+  // Expected Output: Hello!
+}
+
+// --------------------------------------------------
+// 2. Function with Parameters
+// --------------------------------------------------
+// 🔹 Definition:
+// Accepts input values (parameters) to work with.
+// 🔹 Syntax:
+// void functionName(parameterType parameterName) { ... }
+// 🔹 Example:
+void greetUser(String name) {
+  print('Hello, $name!');
+}
+// 🔹 Usage:
+void functionWithParametersUsage() {
+  greetUser('Alice');
+  // Expected Output: Hello, Alice!
+}
+
+// --------------------------------------------------
+// 3. Arrow Function
+// --------------------------------------------------
+// 🔹 Definition:
+// A concise syntax for functions with a single expression.
+// 🔹 Syntax:
+// returnType functionName(parameters) => expression;
+// 🔹 Example:
+int square(int x) => x * x;
+// 🔹 Usage:
+void arrowFunctionUsage() {
+  print(square(4));
+  // Expected Output: 16
+}
+
+// --------------------------------------------------
+// 4. Function with Optional Parameters
+// --------------------------------------------------
+// 🔹 Definition:
+// Parameters that are not required during function call.
+// 🔹 Syntax:
+// void functionName([type param = defaultValue]) { ... }
+// 🔹 Example:
+void sayHello([String name = 'Guest']) {
+  print('Hello, $name');
+}
+// 🔹 Usage:
+void optionalParametersUsage() {
+  sayHello();       // Expected Output: Hello, Guest
+  sayHello('John'); // Expected Output: Hello, John
+}
+
+// --------------------------------------------------
+// 5. Named Parameters
+// --------------------------------------------------
+// 🔹 Definition:
+// Parameters specified by name and usually optional.
+// 🔹 Syntax:
+// void functionName({type param1, type param2}) { ... }
+// 🔹 Example:
+void printInfo({String name = 'Unknown', int age = 0}) {
+  print('Name: $name, Age: $age');
+}
+// 🔹 Usage:
+void namedParametersUsage() {
+  printInfo(name: 'Alice', age: 25);
+  // Expected Output: Name: Alice, Age: 25
+}
+
+// --------------------------------------------------
+// 6. Return Values
+// --------------------------------------------------
+// 🔹 Definition:
+// Returns data to the caller.
+// 🔹 Syntax:
+// returnType functionName(parameters) { return value; }
+// 🔹 Example:
+int multiply(int a, int b) {
+  return a * b;
+}
+// 🔹 Usage:
+void returnValueUsage() {
+  int result = multiply(2, 3);
+  print(result);
+  // Expected Output: 6
+}
+
+// --------------------------------------------------
+// 7. Implicit Return Type
+// --------------------------------------------------
+// 🔹 Definition:
+// Dart infers the return type from the expression.
+// 🔹 Syntax:
+// functionName(parameters) => expression;
+// 🔹 Example:
+bool isEven(int num) => num % 2 == 0;
+// 🔹 Usage:
+void implicitReturnUsage() {
+  print(isEven(4));
+  // Expected Output: true
+}
+
+// --------------------------------------------------
+// 8. No Return Value (Void)
+// --------------------------------------------------
+// 🔹 Definition:
+// Function that does not return any value.
+// 🔹 Syntax:
+// void functionName(parameters) { ... }
+// 🔹 Example:
+void log(String message) {
+  print('Log: $message');
+}
+// 🔹 Usage:
+void voidFunctionUsage() {
+  log('App started');
+  // Expected Output: Log: App started
+}
+
+// --------------------------------------------------
+// 9. Higher-Order Functions
+// --------------------------------------------------
+// 🔹 Definition:
+// Functions that take other functions as arguments or return them.
+// 🔹 Syntax:
+// void functionName(Function param) { ... }
+// 🔹 Example:
+void executeTwice(Function f) {
+  f();
+  f();
+}
+// 🔹 Usage:
+void higherOrderFunctionUsage() {
+  executeTwice(() => print('Hello'));
+  // Expected Output: Hello
+  //                  Hello
+}
+
+// --------------------------------------------------
+// 10. Lexical Closures
+// --------------------------------------------------
+// 🔹 Definition:
+// Functions that capture and remember variables from their scope.
+// 🔹 Syntax:
+// Function functionName() { ... return () { ... }; }
+// 🔹 Example:
+Function makeCounter() {
+  int count = 0;
+  return () {
+    count++;
+    print(count);
+  };
+}
+// 🔹 Usage:
+void lexicalClosureUsage() {
+  var counter = makeCounter();
+  counter(); // Expected Output: 1
+  counter(); // Expected Output: 2
+}
+
+// --------------------------------------------------
+// 11. Generator Functions
+// --------------------------------------------------
+// 🔹 Definition:
+// Functions that lazily produce a sequence of values using `sync*`.
+// 🔹 Syntax:
+// Iterable<Type> functionName() sync* { yield value; }
+// 🔹 Example:
+Iterable<int> countToThree() sync* {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+// 🔹 Usage:
+void generatorFunctionUsage() {
+  for (var i in countToThree()) {
+    print(i);
+    // Expected Output: 1, 2, 3
+  }
+}
+
+// --------------------------------------------------
+// Main Function: Run All Examples
+// --------------------------------------------------
+void main() {
+  regularFunctionUsage();
+  functionWithParametersUsage();
+  arrowFunctionUsage();
+  optionalParametersUsage();
+  namedParametersUsage();
+  returnValueUsage();
+  implicitReturnUsage();
+  voidFunctionUsage();
+  higherOrderFunctionUsage();
+  lexicalClosureUsage();
+  generatorFunctionUsage();
+}
