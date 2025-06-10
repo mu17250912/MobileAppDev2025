@@ -17,5 +17,5 @@ Function counter() {
 void main() {
   var myCounter = counter();
   myCounter();  // Output: 1
-  myCounter(); // Output: 2
+  myCounter();  // Output: 2
 }

@@ -10,5 +10,5 @@ String greet(String name) {
 }
 
 void main() {
-  print(greet("Gloria")); // Output will be Hello Gloria
+  print(greet("Gloria"));  // Output will be Hello Gloria
 }

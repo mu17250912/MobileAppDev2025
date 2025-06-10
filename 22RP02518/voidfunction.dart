@@ -8,5 +8,5 @@ void sayHello() {
 }
 
 void main() {
-  sayHello(); // Output will be Hello!
+  sayHello();  // Output will be Hello!
 }

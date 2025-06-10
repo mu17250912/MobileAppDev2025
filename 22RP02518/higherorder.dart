@@ -14,6 +14,6 @@ String toUpperCase(String name) {
 }
 
 void main() {
-  greetUser("Gloria", toUpperCase); // Output will be Hello, GLORIA!
+  greetUser("Gloria", toUpperCase);  // Output will be Hello, GLORIA!
 }
 

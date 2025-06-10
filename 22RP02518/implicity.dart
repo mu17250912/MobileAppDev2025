@@ -6,5 +6,5 @@
 add(a, b) => a + b;//this is the same as: int Function(int, int) add = (int a, int b) => a + b;
 
 void main() {
-  print(add(2, 3)); // Output will be 5
+  print(add(2, 3));  // Output will be 5
 }
