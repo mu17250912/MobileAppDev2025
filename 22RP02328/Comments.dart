@@ -27,7 +27,7 @@ void main() {
   // 'as' operator example
   dynamic data = 'Hello!';
   if (data is String) {
-    String text = data as String;
+    String text = data;
     print('Data contains: $text');
   }
   
