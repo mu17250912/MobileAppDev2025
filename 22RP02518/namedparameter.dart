@@ -8,5 +8,5 @@ void greet({String name = "User", int age = 18}) {
 }
 
 void main() {
-  greet(name: "Gloria", age: 22);  // Output will be Hi Gloria, you are 22 years old.
+  greet(name: "Gloria", age: 22); // Output will be Hi Gloria, you are 22 years old.
 }

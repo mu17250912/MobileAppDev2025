@@ -11,6 +11,6 @@ Iterable<int> countTo(int n) sync* {
 
 void main() {
   for (var num in countTo(3)) {
-    print(num);  // Output: 1 2 3
+    print(num); // Output: 1 2 3
   }
 }

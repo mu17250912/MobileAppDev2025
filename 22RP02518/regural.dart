@@ -2,7 +2,7 @@
 //Usage: To group and reuse code.
 //syntax:
 // void functionName() {
-//   // code to be executed
+//  //code to be executed
 // }
 
 void greet() {

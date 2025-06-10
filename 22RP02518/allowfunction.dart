@@ -6,5 +6,5 @@
 String greet(String name) => "Hello, $name!";
 
 void main() {
-  print(greet("Gloria"));  // Output will be Hello, Gloria!
+  print(greet("Gloria")); // Output will be Hello, Gloria!
 }
