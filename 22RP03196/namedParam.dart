@@ -1,6 +1,6 @@
 // Named parameters in curly braces 
 void Details({String? job, String? hobby}) {
-  print('Pacifique works as $job and enjoys $hobby');
+  print('theophile works as $job and enjoys $hobby');
 }
 
 void main() {
