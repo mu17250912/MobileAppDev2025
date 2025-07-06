@@ -1,15 +1,15 @@
 void main() {
   // final
-  final String pacifiqueCity = 'Kigali';
-  print('Pacifique lives in $pacifiqueCity');
+  final String theophile = 'Kigali';
+  print('Pacifique lives in $theophile');
 
   // dynamic
-  dynamic pacifiqueVar = 'Hello!';
-  print(pacifiqueVar);
-  pacifiqueVar = 123;
-  print(pacifiqueVar);
+  dynamic theophileVar = 'Hello!';
+  print(theophileVar);
+  theophileVar = 123;
+  print(theophileVar);
 
   // var
-  var pacifiqueAge = 25;
-  print('Pacifique is $pacifiqueAge years old');
+  var theophileAge = 25;
+  print('theophile is $theophileAge years old');
 }
