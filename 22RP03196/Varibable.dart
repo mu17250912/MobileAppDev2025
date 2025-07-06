@@ -1,6 +1,6 @@
 void main() {
   // Basic variable declarations
-  var myName = "Pacifique";    
+  var myName = "THEOPHILE";    
   var country = "Rwanda";  
 
   // Type annotations
