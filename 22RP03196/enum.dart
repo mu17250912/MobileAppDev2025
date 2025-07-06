@@ -1,20 +1,20 @@
 
-enum PacifiqueMood { happy, sad, excited }
+enum theophileMood { happy, sad, excited }
 
 void main() {
   // Enums
-  PacifiqueMood mood = PacifiqueMood.happy;
-  print('Pacifique is feeling: $mood');
+  PacifiqueMood mood = theophile.happy;
+  print('theophile is feeling: $mood');
 
   switch (mood) {
-    case PacifiqueMood.happy:
-      print('Pacifique is in a good mood!');
+    case theophileMood.happy:
+      print('theophile is in a good mood!');
       break;
-    case PacifiqueMood.sad:
-      print('Pacifique needs cheering up.');
+    case theophileMood.sad:
+      print('theophile needs cheering up.');
       break;
-    case PacifiqueMood.excited:
-      print('Pacifique is very excited!');
+    case theophileMood.excited:
+      print('theophile is very excited!');
       break;
   }
 }
