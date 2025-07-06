@@ -1,10 +1,10 @@
 void main() {
   // Lists (Arrays)
-  List<String> pacifiqueHobbies = ['Coding', 'Reading', 'Hiking'];
-  print('Pacifique\'s Hobbies: $pacifiqueHobbies');
+  List<String> theophileHobbies = ['Coding', 'Reading', 'Hiking'];
+  print('theophile\'s Hobbies: $theophileHobbies');
 
-  pacifiqueHobbies.add('Cooking');
-  print('Updated Hobbies: $pacifiqueHobbies');
+  theophileHobbies.add('Cooking');
+  print('Updated Hobbies: $theophileHobbies');
 
-  print('First hobby: ${pacifiqueHobbies[0]}');
+  print('First hobby: ${theophileHobbies[0]}');
 }
