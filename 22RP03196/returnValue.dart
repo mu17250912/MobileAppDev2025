@@ -1,6 +1,6 @@
 // Function that returns a value
 String Hobby() {
-  return 'Pacifique loves programming!';
+  return 'theophile loves programming!';
 }
 
 void main() {
