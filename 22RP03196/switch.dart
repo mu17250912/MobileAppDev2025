@@ -1,14 +1,14 @@
 void main() {
-  String pacifiqueJob = 'Developer';
+  String theophileJob = 'Business';
 
-  switch (pacifiqueJob) {
+  switch (theophileJob) {
     case 'Designer':
-      print('Pacifique designs stuff');
+      print('theophile designs stuff');
       break;
-    case 'Developer':
-      print('Pacifique writes code');
+    case 'Business':
+      print('theophile writes code');
       break;
     default:
-      print('Pacifique does something else');
+      print('theophile does something else');
   }
 }
