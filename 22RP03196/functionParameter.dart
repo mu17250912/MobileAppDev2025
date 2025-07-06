@@ -4,5 +4,5 @@ void greetPerson(String name, int age) { // creating Function With Parameters
 }
 
 void main() {
-  greetPerson('Pacifique', 20); // Pass arguments
+  greetPerson('theophile', 20); // Pass arguments
 }
