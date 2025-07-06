@@ -1,9 +1,9 @@
 void main() {
   // Sets
-  Set<String> pacifiqueSkills = {'Dart', 'Flutter', 'Problem Solving'};
-  print('Pacifique\'s Skills: $pacifiqueSkills');
+  Set<String> theophileSkills = {'Dart', 'Flutter', 'Problem Solving'};
+  print('theophile\'s Skills: $theophileSkills');
 
-  pacifiqueSkills.add('Dart'); 
-  pacifiqueSkills.add('UI Design');
-  print('Updated Skills: $pacifiqueSkills');
+  theophileSkills.add('Dart'); 
+  theophileSkills.add('UI Design');
+  print('Updated Skills: $theophileSkills');
 }
