@@ -1,8 +1,8 @@
 void main() {
-  int pacifiqueCounter = 0;
+  int theophileCounter = 0;
 
-  while (pacifiqueCounter < 3) {
-    print('Pacifique count: $pacifiqueCounter');
-    pacifiqueCounter++;
+  while (theophileCounter < 3) {
+    print('theophile count: $theophileCounter');
+    theophileCounter++;
   }
 }
